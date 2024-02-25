@@ -179,19 +179,20 @@ function selectAnswer(selectedCountryName) {
         showCountryInfo(selectedCountryName);
         
         // 记录正确的国家
-        putIntoResultTable(g_correctCountries, selectedCountryName);
+        putIntoResultTable(g_correctCountries, g_correctCountryName);
         
         // 准备下一个问题
         nextQuestion();
     } else {
         // 记录错误的国家
-        putIntoResultTable(g_wrongCountries, selectedCountryName);
+        putIntoResultTable(g_wrongCountries, g_correctCountryName);
 
         // 答案错误，直接跳转到下一个问题
         nextQuestion();
     }
 }
 
+// 把正确的答案保存到结果列表中，答对和答错的分别保存不同的resultTable
 function putIntoResultTable(resultTable, countryName) {
     resultTable.push(countryName);
 }

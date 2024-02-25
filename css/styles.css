@@ -11,9 +11,26 @@ h1 {
     font-family: sans-serif;
     color:  rgb(87, 34, 221);
 }
+
+.text-title{
+    text-align: center;
+    font-size: 4ch;
+    font-family: sans-serif;
+}
+.text-blue {
+    color: rgb(12, 34, 158);
+}
+.text-info {
+    color: rgb(57, 119, 212);
+}
+
 .board-container {
     display: flex;
     justify-content: flex-end;
+}
+
+.result-pic {
+  margin: 10px;
 }
 
 .luna-btn {
@@ -25,6 +42,21 @@ h1 {
   box-shadow: 0px 0px 2px 2px rgb(12, 34, 158);
   min-height:40px; 
   min-width: 120px;
+}
+
+.luna-btn-correct {
+  background-color: rgb(7, 154, 80);
+  color: aqua;
+  font-size: larger;
+  border:none;
+  border-radius:10px;
+  box-shadow: 0px 0px 2px 2px rgb(12, 34, 158);
+  min-height:40px; 
+  min-width: 120px;
+}
+
+.final-result-container {
+  margin-top: 50px;
 }
 
 #scoreboard {

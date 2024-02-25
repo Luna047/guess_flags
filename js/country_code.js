@@ -1,4 +1,4 @@
-{
+const original_data = {
     "countries": [
         {
             "name": "安道尔",
@@ -31,9 +31,9 @@
             "info": "阿尔巴尼亚，是一个很棒的国家！"
         },
         {
-            "name": "亞美尼亞",
+            "name": "亚美尼亚",
             "flagUrl": "flags/am.png",
-            "info": "亞美尼亞，是一个很棒的国家！"
+            "info": "亚美尼亚，是一个很棒的国家！"
         },
         {
             "name": "安哥拉",
@@ -41,19 +41,14 @@
             "info": "安哥拉，是一个很棒的国家！"
         },
         {
-            "name": "南极洲",
-            "flagUrl": "flags/aq.png",
-            "info": "南极洲，是一个很棒的国家！"
-        },
-        {
             "name": "阿根廷",
             "flagUrl": "flags/ar.png",
             "info": "阿根廷，是一个很棒的国家！"
         },
         {
-            "name": "美屬薩摩亞",
+            "name": "美属萨摩亚",
             "flagUrl": "flags/as.png",
-            "info": "美屬薩摩亞，是一个很棒的国家！"
+            "info": "美属萨摩亚，是一个很棒的国家！"
         },
         {
             "name": "奥地利",
@@ -66,9 +61,9 @@
             "info": "澳大利亚，是一个很棒的国家！"
         },
         {
-            "name": "阿魯巴",
+            "name": "阿鲁巴",
             "flagUrl": "flags/aw.png",
-            "info": "阿魯巴，是一个很棒的国家！"
+            "info": "阿鲁巴，是一个很棒的国家！"
         },
         {
             "name": "奥兰",
@@ -101,9 +96,9 @@
             "info": "比利时，是一个很棒的国家！"
         },
         {
-            "name": "布吉納法索",
+            "name": "布吉纳法索",
             "flagUrl": "flags/bf.png",
-            "info": "布吉納法索，是一个很棒的国家！"
+            "info": "布吉纳法索，是一个很棒的国家！"
         },
         {
             "name": "保加利亚",
@@ -116,9 +111,9 @@
             "info": "巴林，是一个很棒的国家！"
         },
         {
-            "name": "蒲隆地",
+            "name": "布隆迪",
             "flagUrl": "flags/bi.png",
-            "info": "蒲隆地，是一个很棒的国家！"
+            "info": "布隆迪，是一个很棒的国家！"
         },
         {
             "name": "贝宁",
@@ -126,9 +121,9 @@
             "info": "贝宁，是一个很棒的国家！"
         },
         {
-            "name": "聖巴泰勒米",
+            "name": "圣巴泰勒米",
             "flagUrl": "flags/bl.png",
-            "info": "聖巴泰勒米，是一个很棒的国家！"
+            "info": "圣巴泰勒米，是一个很棒的国家！"
         },
         {
             "name": "百慕大",
@@ -141,14 +136,14 @@
             "info": "汶莱，是一个很棒的国家！"
         },
         {
-            "name": "玻利維亞",
+            "name": "玻利维亚",
             "flagUrl": "flags/bo.png",
-            "info": "玻利維亞，是一个很棒的国家！"
+            "info": "玻利维亚，是一个很棒的国家！"
         },
         {
-            "name": "荷蘭加勒比區",
+            "name": "荷兰加勒比区",
             "flagUrl": "flags/bq.png",
-            "info": "荷蘭加勒比區，是一个很棒的国家！"
+            "info": "荷兰加勒比区，是一个很棒的国家！"
         },
         {
             "name": "巴西",
@@ -166,14 +161,9 @@
             "info": "不丹，是一个很棒的国家！"
         },
         {
-            "name": "布韦岛",
-            "flagUrl": "flags/bv.png",
-            "info": "布韦岛，是一个很棒的国家！"
-        },
-        {
-            "name": "波札那",
+            "name": "博茨瓦纳",
             "flagUrl": "flags/bw.png",
-            "info": "波札那，是一个很棒的国家！"
+            "info": "博茨瓦纳，是一个很棒的国家！"
         },
         {
             "name": "白俄罗斯",
@@ -191,9 +181,9 @@
             "info": "加拿大，是一个很棒的国家！"
         },
         {
-            "name": "科科斯（基林）群島",
+            "name": "科科斯（基林）群岛",
             "flagUrl": "flags/cc.png",
-            "info": "科科斯（基林）群島，是一个很棒的国家！"
+            "info": "科科斯（基林）群岛，是一个很棒的国家！"
         },
         {
             "name": "刚果民主共和国",
@@ -201,9 +191,9 @@
             "info": "刚果民主共和国，是一个很棒的国家！"
         },
         {
-            "name": "中非共和國",
+            "name": "中非共和国",
             "flagUrl": "flags/cf.png",
-            "info": "中非共和國，是一个很棒的国家！"
+            "info": "中非共和国，是一个很棒的国家！"
         },
         {
             "name": "刚果共和国",
@@ -271,9 +261,9 @@
             "info": "圣诞岛，是一个很棒的国家！"
         },
         {
-            "name": "賽普勒斯",
+            "name": "塞浦路斯",
             "flagUrl": "flags/cy.png",
-            "info": "賽普勒斯，是一个很棒的国家！"
+            "info": "塞浦路斯，是一个很棒的国家！"
         },
         {
             "name": "捷克",
@@ -351,9 +341,9 @@
             "info": "芬兰，是一个很棒的国家！"
         },
         {
-            "name": "斐濟",
+            "name": "斐济",
             "flagUrl": "flags/fj.png",
-            "info": "斐濟，是一个很棒的国家！"
+            "info": "斐济，是一个很棒的国家！"
         },
         {
             "name": "福克兰群岛",
@@ -386,44 +376,9 @@
             "info": "英国，是一个很棒的国家！"
         },
         {
-            "name": "英格兰",
-            "flagUrl": "flags/gb-eng.png",
-            "info": "英格兰，是一个很棒的国家！"
-        },
-        {
-            "name": "北爱尔兰",
-            "flagUrl": "flags/gb-nir.png",
-            "info": "北爱尔兰，是一个很棒的国家！"
-        },
-        {
-            "name": "蘇格蘭",
-            "flagUrl": "flags/gb-sct.png",
-            "info": "蘇格蘭，是一个很棒的国家！"
-        },
-        {
-            "name": "威爾斯",
-            "flagUrl": "flags/gb-wls.png",
-            "info": "威爾斯，是一个很棒的国家！"
-        },
-        {
-            "name": "格林纳达",
-            "flagUrl": "flags/gd.png",
-            "info": "格林纳达，是一个很棒的国家！"
-        },
-        {
             "name": "格鲁吉亚",
             "flagUrl": "flags/ge.png",
             "info": "格鲁吉亚，是一个很棒的国家！"
-        },
-        {
-            "name": "法屬圭亞那",
-            "flagUrl": "flags/gf.png",
-            "info": "法屬圭亞那，是一个很棒的国家！"
-        },
-        {
-            "name": "根西行政區",
-            "flagUrl": "flags/gg.png",
-            "info": "根西行政區，是一个很棒的国家！"
         },
         {
             "name": "加纳",
@@ -451,11 +406,6 @@
             "info": "几内亚，是一个很棒的国家！"
         },
         {
-            "name": "瓜德罗普",
-            "flagUrl": "flags/gp.png",
-            "info": "瓜德罗普，是一个很棒的国家！"
-        },
-        {
             "name": "赤道几内亚",
             "flagUrl": "flags/gq.png",
             "info": "赤道几内亚，是一个很棒的国家！"
@@ -466,39 +416,24 @@
             "info": "希腊，是一个很棒的国家！"
         },
         {
-            "name": "南乔治亚和南桑威奇群岛",
-            "flagUrl": "flags/gs.png",
-            "info": "南乔治亚和南桑威奇群岛，是一个很棒的国家！"
-        },
-        {
             "name": "危地马拉",
             "flagUrl": "flags/gt.png",
             "info": "危地马拉，是一个很棒的国家！"
         },
         {
-            "name": "關島",
+            "name": "关岛",
             "flagUrl": "flags/gu.png",
-            "info": "關島，是一个很棒的国家！"
+            "info": "关岛，是一个很棒的国家！"
         },
         {
-            "name": "幾內亞比索",
+            "name": "几内亚比索",
             "flagUrl": "flags/gw.png",
-            "info": "幾內亞比索，是一个很棒的国家！"
+            "info": "几内亚比索，是一个很棒的国家！"
         },
         {
             "name": "圭亚那",
             "flagUrl": "flags/gy.png",
             "info": "圭亚那，是一个很棒的国家！"
-        },
-        {
-            "name": "香港",
-            "flagUrl": "flags/hk.png",
-            "info": "香港，是一个很棒的国家！"
-        },
-        {
-            "name": "赫德島和麥克唐納群島",
-            "flagUrl": "flags/hm.png",
-            "info": "赫德島和麥克唐納群島，是一个很棒的国家！"
         },
         {
             "name": "洪都拉斯",
@@ -536,19 +471,9 @@
             "info": "以色列，是一个很棒的国家！"
         },
         {
-            "name": "曼島",
-            "flagUrl": "flags/im.png",
-            "info": "曼島，是一个很棒的国家！"
-        },
-        {
             "name": "印度",
             "flagUrl": "flags/in.png",
             "info": "印度，是一个很棒的国家！"
-        },
-        {
-            "name": "英屬印度洋領地",
-            "flagUrl": "flags/io.png",
-            "info": "英屬印度洋領地，是一个很棒的国家！"
         },
         {
             "name": "伊拉克",
@@ -569,11 +494,6 @@
             "name": "意大利",
             "flagUrl": "flags/it.png",
             "info": "意大利，是一个很棒的国家！"
-        },
-        {
-            "name": "澤西",
-            "flagUrl": "flags/je.png",
-            "info": "澤西，是一个很棒的国家！"
         },
         {
             "name": "牙买加",
@@ -611,22 +531,22 @@
             "info": "基里巴斯，是一个很棒的国家！"
         },
         {
-            "name": "葛摩",
+            "name": "科摩罗",
             "flagUrl": "flags/km.png",
-            "info": "葛摩，是一个很棒的国家！"
+            "info": "科摩罗，是一个很棒的国家！"
         },
         {
-            "name": "聖克里斯多福及尼維斯",
+            "name": "圣克里斯多福及尼维斯",
             "flagUrl": "flags/kn.png",
-            "info": "聖克里斯多福及尼維斯，是一个很棒的国家！"
+            "info": "圣克里斯多福及尼维斯，是一个很棒的国家！"
         },
         {
-            "name": "朝鲜民主主义人民共和国",
+            "name": "朝鲜",
             "flagUrl": "flags/kp.png",
             "info": "朝鲜民主主义人民共和国，是一个很棒的国家！"
         },
         {
-            "name": "大韩民国",
+            "name": "韩国",
             "flagUrl": "flags/kr.png",
             "info": "大韩民国，是一个很棒的国家！"
         },
@@ -636,9 +556,9 @@
             "info": "科威特，是一个很棒的国家！"
         },
         {
-            "name": "開曼群島",
+            "name": "开曼群岛",
             "flagUrl": "flags/ky.png",
-            "info": "開曼群島，是一个很棒的国家！"
+            "info": "开曼群岛，是一个很棒的国家！"
         },
         {
             "name": "哈萨克斯坦",
@@ -661,14 +581,14 @@
             "info": "圣卢西亚，是一个很棒的国家！"
         },
         {
-            "name": "列支敦斯登",
+            "name": "列支敦士登",
             "flagUrl": "flags/li.png",
-            "info": "列支敦斯登，是一个很棒的国家！"
+            "info": "列支敦士登，是一个很棒的国家！"
         },
         {
-            "name": "斯里蘭卡",
+            "name": "斯里兰卡",
             "flagUrl": "flags/lk.png",
-            "info": "斯里蘭卡，是一个很棒的国家！"
+            "info": "斯里兰卡，是一个很棒的国家！"
         },
         {
             "name": "利比里亚",
@@ -691,9 +611,9 @@
             "info": "卢森堡，是一个很棒的国家！"
         },
         {
-            "name": "拉脫維亞",
+            "name": "拉脱维亚",
             "flagUrl": "flags/lv.png",
-            "info": "拉脫維亞，是一个很棒的国家！"
+            "info": "拉脱维亚，是一个很棒的国家！"
         },
         {
             "name": "利比亚",
@@ -716,14 +636,9 @@
             "info": "摩尔多瓦，是一个很棒的国家！"
         },
         {
-            "name": "蒙特內哥羅",
+            "name": "蒙特内哥罗(黑山)",
             "flagUrl": "flags/me.png",
-            "info": "蒙特內哥羅，是一个很棒的国家！"
-        },
-        {
-            "name": "法屬聖馬丁",
-            "flagUrl": "flags/mf.png",
-            "info": "法屬聖馬丁，是一个很棒的国家！"
+            "info": "蒙特内哥罗，是一个很棒的国家！"
         },
         {
             "name": "马达加斯加",
@@ -731,14 +646,9 @@
             "info": "马达加斯加，是一个很棒的国家！"
         },
         {
-            "name": "馬紹爾群島",
+            "name": "马绍尔群岛",
             "flagUrl": "flags/mh.png",
-            "info": "馬紹爾群島，是一个很棒的国家！"
-        },
-        {
-            "name": "北馬其頓",
-            "flagUrl": "flags/mk.png",
-            "info": "北馬其頓，是一个很棒的国家！"
+            "info": "马绍尔群岛，是一个很棒的国家！"
         },
         {
             "name": "马里",
@@ -756,29 +666,9 @@
             "info": "蒙古国，是一个很棒的国家！"
         },
         {
-            "name": "澳門",
-            "flagUrl": "flags/mo.png",
-            "info": "澳門，是一个很棒的国家！"
-        },
-        {
-            "name": "北马里亚纳群岛",
-            "flagUrl": "flags/mp.png",
-            "info": "北马里亚纳群岛，是一个很棒的国家！"
-        },
-        {
-            "name": "馬提尼克",
-            "flagUrl": "flags/mq.png",
-            "info": "馬提尼克，是一个很棒的国家！"
-        },
-        {
             "name": "毛里塔尼亚",
             "flagUrl": "flags/mr.png",
             "info": "毛里塔尼亚，是一个很棒的国家！"
-        },
-        {
-            "name": "蒙特塞拉特",
-            "flagUrl": "flags/ms.png",
-            "info": "蒙特塞拉特，是一个很棒的国家！"
         },
         {
             "name": "马耳他",
@@ -821,9 +711,9 @@
             "info": "纳米比亚，是一个很棒的国家！"
         },
         {
-            "name": "新喀里多尼亞",
+            "name": "新喀里多尼亚",
             "flagUrl": "flags/nc.png",
-            "info": "新喀里多尼亞，是一个很棒的国家！"
+            "info": "新喀里多尼亚，是一个很棒的国家！"
         },
         {
             "name": "尼日尔",
@@ -831,14 +721,9 @@
             "info": "尼日尔，是一个很棒的国家！"
         },
         {
-            "name": "诺福克岛",
-            "flagUrl": "flags/nf.png",
-            "info": "诺福克岛，是一个很棒的国家！"
-        },
-        {
-            "name": "奈及利亞",
+            "name": "尼日利亚",
             "flagUrl": "flags/ng.png",
-            "info": "奈及利亞，是一个很棒的国家！"
+            "info": "尼日利亚，是一个很棒的国家！"
         },
         {
             "name": "尼加拉瓜",
@@ -846,7 +731,7 @@
             "info": "尼加拉瓜，是一个很棒的国家！"
         },
         {
-            "name": "荷兰王国",
+            "name": "荷兰",
             "flagUrl": "flags/nl.png",
             "info": "荷兰王国，是一个很棒的国家！"
         },
@@ -859,16 +744,6 @@
             "name": "尼泊尔",
             "flagUrl": "flags/np.png",
             "info": "尼泊尔，是一个很棒的国家！"
-        },
-        {
-            "name": "諾魯",
-            "flagUrl": "flags/nr.png",
-            "info": "諾魯，是一个很棒的国家！"
-        },
-        {
-            "name": "紐埃",
-            "flagUrl": "flags/nu.png",
-            "info": "紐埃，是一个很棒的国家！"
         },
         {
             "name": "新西兰",
@@ -891,11 +766,6 @@
             "info": "秘鲁，是一个很棒的国家！"
         },
         {
-            "name": "法屬玻里尼西亞",
-            "flagUrl": "flags/pf.png",
-            "info": "法屬玻里尼西亞，是一个很棒的国家！"
-        },
-        {
             "name": "巴布亚新几内亚",
             "flagUrl": "flags/pg.png",
             "info": "巴布亚新几内亚，是一个很棒的国家！"
@@ -916,34 +786,19 @@
             "info": "波兰，是一个很棒的国家！"
         },
         {
-            "name": "圣皮埃尔和密克隆",
-            "flagUrl": "flags/pm.png",
-            "info": "圣皮埃尔和密克隆，是一个很棒的国家！"
-        },
-        {
-            "name": "皮特凯恩群岛",
-            "flagUrl": "flags/pn.png",
-            "info": "皮特凯恩群岛，是一个很棒的国家！"
-        },
-        {
             "name": "波多黎各",
             "flagUrl": "flags/pr.png",
             "info": "波多黎各，是一个很棒的国家！"
         },
         {
-            "name": "巴勒斯坦國",
+            "name": "巴勒斯坦",
             "flagUrl": "flags/ps.png",
-            "info": "巴勒斯坦國，是一个很棒的国家！"
+            "info": "巴勒斯坦国，是一个很棒的国家！"
         },
         {
             "name": "葡萄牙",
             "flagUrl": "flags/pt.png",
             "info": "葡萄牙，是一个很棒的国家！"
-        },
-        {
-            "name": "帛琉",
-            "flagUrl": "flags/pw.png",
-            "info": "帛琉，是一个很棒的国家！"
         },
         {
             "name": "巴拉圭",
@@ -956,14 +811,9 @@
             "info": "卡塔尔，是一个很棒的国家！"
         },
         {
-            "name": "留尼汪",
-            "flagUrl": "flags/re.png",
-            "info": "留尼汪，是一个很棒的国家！"
-        },
-        {
-            "name": "羅馬尼亞",
+            "name": "罗马尼亚",
             "flagUrl": "flags/ro.png",
-            "info": "羅馬尼亞，是一个很棒的国家！"
+            "info": "罗马尼亚，是一个很棒的国家！"
         },
         {
             "name": "塞尔维亚",
@@ -1011,9 +861,9 @@
             "info": "新加坡，是一个很棒的国家！"
         },
         {
-            "name": "圣赫勒拿、阿森松和特里斯坦-达库尼亚",
+            "name": "圣赫勒拿岛",
             "flagUrl": "flags/sh.png",
-            "info": "圣赫勒拿、阿森松和特里斯坦-达库尼亚，是一个很棒的国家！"
+            "info": "圣赫勒拿岛，是一个很棒的国家！"
         },
         {
             "name": "斯洛文尼亚",
@@ -1051,14 +901,9 @@
             "info": "索马里，是一个很棒的国家！"
         },
         {
-            "name": "蘇利南",
+            "name": "苏利南",
             "flagUrl": "flags/sr.png",
-            "info": "蘇利南，是一个很棒的国家！"
-        },
-        {
-            "name": "南蘇丹",
-            "flagUrl": "flags/ss.png",
-            "info": "南蘇丹，是一个很棒的国家！"
+            "info": "苏利南，是一个很棒的国家！"
         },
         {
             "name": "圣多美和普林西比",
@@ -1071,24 +916,14 @@
             "info": "萨尔瓦多，是一个很棒的国家！"
         },
         {
-            "name": "荷屬聖馬丁",
-            "flagUrl": "flags/sx.png",
-            "info": "荷屬聖馬丁，是一个很棒的国家！"
-        },
-        {
             "name": "叙利亚",
             "flagUrl": "flags/sy.png",
             "info": "叙利亚，是一个很棒的国家！"
         },
         {
-            "name": "史瓦帝尼",
+            "name": "斯威士兰",
             "flagUrl": "flags/sz.png",
-            "info": "史瓦帝尼，是一个很棒的国家！"
-        },
-        {
-            "name": "特克斯和凯科斯群岛",
-            "flagUrl": "flags/tc.png",
-            "info": "特克斯和凯科斯群岛，是一个很棒的国家！"
+            "info": "斯威士兰，是一个很棒的国家！"
         },
         {
             "name": "乍得",
@@ -1131,14 +966,14 @@
             "info": "土库曼斯坦，是一个很棒的国家！"
         },
         {
-            "name": "突尼西亞",
+            "name": "突尼斯",
             "flagUrl": "flags/tn.png",
-            "info": "突尼西亞，是一个很棒的国家！"
+            "info": "突尼斯，是一个很棒的国家！"
         },
         {
-            "name": "東加",
+            "name": "汤加",
             "flagUrl": "flags/to.png",
-            "info": "東加，是一个很棒的国家！"
+            "info": "汤加，是一个很棒的国家！"
         },
         {
             "name": "土耳其",
@@ -1146,19 +981,14 @@
             "info": "土耳其，是一个很棒的国家！"
         },
         {
-            "name": "千里達及托巴哥",
+            "name": "千里达及托巴哥",
             "flagUrl": "flags/tt.png",
-            "info": "千里達及托巴哥，是一个很棒的国家！"
+            "info": "千里达及托巴哥，是一个很棒的国家！"
         },
         {
-            "name": "圖瓦盧",
+            "name": "图瓦卢",
             "flagUrl": "flags/tv.png",
-            "info": "圖瓦盧，是一个很棒的国家！"
-        },
-        {
-            "name": "中華民國",
-            "flagUrl": "flags/tw.png",
-            "info": "中華民國，是一个很棒的国家！"
+            "info": "图瓦卢，是一个很棒的国家！"
         },
         {
             "name": "坦桑尼亚",
@@ -1176,269 +1006,9 @@
             "info": "乌干达，是一个很棒的国家！"
         },
         {
-            "name": "美国本土外小岛屿",
-            "flagUrl": "flags/um.png",
-            "info": "美国本土外小岛屿，是一个很棒的国家！"
-        },
-        {
-            "name": "联合国",
-            "flagUrl": "flags/un.png",
-            "info": "联合国，是一个很棒的国家！"
-        },
-        {
             "name": "美国",
             "flagUrl": "flags/us.png",
             "info": "美国，是一个很棒的国家！"
-        },
-        {
-            "name": "阿拉斯加州",
-            "flagUrl": "flags/us-ak.png",
-            "info": "阿拉斯加州，是一个很棒的国家！"
-        },
-        {
-            "name": "亚拉巴马州",
-            "flagUrl": "flags/us-al.png",
-            "info": "亚拉巴马州，是一个很棒的国家！"
-        },
-        {
-            "name": "阿肯色州",
-            "flagUrl": "flags/us-ar.png",
-            "info": "阿肯色州，是一个很棒的国家！"
-        },
-        {
-            "name": "亞利桑那州",
-            "flagUrl": "flags/us-az.png",
-            "info": "亞利桑那州，是一个很棒的国家！"
-        },
-        {
-            "name": "加利福尼亚州",
-            "flagUrl": "flags/us-ca.png",
-            "info": "加利福尼亚州，是一个很棒的国家！"
-        },
-        {
-            "name": "科羅拉多州",
-            "flagUrl": "flags/us-co.png",
-            "info": "科羅拉多州，是一个很棒的国家！"
-        },
-        {
-            "name": "康乃狄克州",
-            "flagUrl": "flags/us-ct.png",
-            "info": "康乃狄克州，是一个很棒的国家！"
-        },
-        {
-            "name": "特拉华州",
-            "flagUrl": "flags/us-de.png",
-            "info": "特拉华州，是一个很棒的国家！"
-        },
-        {
-            "name": "佛罗里达州",
-            "flagUrl": "flags/us-fl.png",
-            "info": "佛罗里达州，是一个很棒的国家！"
-        },
-        {
-            "name": "喬治亞州",
-            "flagUrl": "flags/us-ga.png",
-            "info": "喬治亞州，是一个很棒的国家！"
-        },
-        {
-            "name": "夏威夷州",
-            "flagUrl": "flags/us-hi.png",
-            "info": "夏威夷州，是一个很棒的国家！"
-        },
-        {
-            "name": "艾奥瓦州",
-            "flagUrl": "flags/us-ia.png",
-            "info": "艾奥瓦州，是一个很棒的国家！"
-        },
-        {
-            "name": "爱达荷州",
-            "flagUrl": "flags/us-id.png",
-            "info": "爱达荷州，是一个很棒的国家！"
-        },
-        {
-            "name": "伊利诺伊州",
-            "flagUrl": "flags/us-il.png",
-            "info": "伊利诺伊州，是一个很棒的国家！"
-        },
-        {
-            "name": "印第安纳州",
-            "flagUrl": "flags/us-in.png",
-            "info": "印第安纳州，是一个很棒的国家！"
-        },
-        {
-            "name": "堪薩斯州",
-            "flagUrl": "flags/us-ks.png",
-            "info": "堪薩斯州，是一个很棒的国家！"
-        },
-        {
-            "name": "肯塔基州",
-            "flagUrl": "flags/us-ky.png",
-            "info": "肯塔基州，是一个很棒的国家！"
-        },
-        {
-            "name": "路易斯安那州",
-            "flagUrl": "flags/us-la.png",
-            "info": "路易斯安那州，是一个很棒的国家！"
-        },
-        {
-            "name": "麻薩諸塞州",
-            "flagUrl": "flags/us-ma.png",
-            "info": "麻薩諸塞州，是一个很棒的国家！"
-        },
-        {
-            "name": "马里兰州",
-            "flagUrl": "flags/us-md.png",
-            "info": "马里兰州，是一个很棒的国家！"
-        },
-        {
-            "name": "缅因州",
-            "flagUrl": "flags/us-me.png",
-            "info": "缅因州，是一个很棒的国家！"
-        },
-        {
-            "name": "密歇根州",
-            "flagUrl": "flags/us-mi.png",
-            "info": "密歇根州，是一个很棒的国家！"
-        },
-        {
-            "name": "明尼蘇達州",
-            "flagUrl": "flags/us-mn.png",
-            "info": "明尼蘇達州，是一个很棒的国家！"
-        },
-        {
-            "name": "密蘇里州",
-            "flagUrl": "flags/us-mo.png",
-            "info": "密蘇里州，是一个很棒的国家！"
-        },
-        {
-            "name": "密西西比州",
-            "flagUrl": "flags/us-ms.png",
-            "info": "密西西比州，是一个很棒的国家！"
-        },
-        {
-            "name": "蒙大拿州",
-            "flagUrl": "flags/us-mt.png",
-            "info": "蒙大拿州，是一个很棒的国家！"
-        },
-        {
-            "name": "北卡罗来纳州",
-            "flagUrl": "flags/us-nc.png",
-            "info": "北卡罗来纳州，是一个很棒的国家！"
-        },
-        {
-            "name": "北达科他州",
-            "flagUrl": "flags/us-nd.png",
-            "info": "北达科他州，是一个很棒的国家！"
-        },
-        {
-            "name": "內布拉斯加州",
-            "flagUrl": "flags/us-ne.png",
-            "info": "內布拉斯加州，是一个很棒的国家！"
-        },
-        {
-            "name": "新罕布什尔州",
-            "flagUrl": "flags/us-nh.png",
-            "info": "新罕布什尔州，是一个很棒的国家！"
-        },
-        {
-            "name": "新泽西州",
-            "flagUrl": "flags/us-nj.png",
-            "info": "新泽西州，是一个很棒的国家！"
-        },
-        {
-            "name": "新墨西哥州",
-            "flagUrl": "flags/us-nm.png",
-            "info": "新墨西哥州，是一个很棒的国家！"
-        },
-        {
-            "name": "内华达州",
-            "flagUrl": "flags/us-nv.png",
-            "info": "内华达州，是一个很棒的国家！"
-        },
-        {
-            "name": "纽约州",
-            "flagUrl": "flags/us-ny.png",
-            "info": "纽约州，是一个很棒的国家！"
-        },
-        {
-            "name": "俄亥俄州",
-            "flagUrl": "flags/us-oh.png",
-            "info": "俄亥俄州，是一个很棒的国家！"
-        },
-        {
-            "name": "奧克拉荷馬州",
-            "flagUrl": "flags/us-ok.png",
-            "info": "奧克拉荷馬州，是一个很棒的国家！"
-        },
-        {
-            "name": "俄勒冈州",
-            "flagUrl": "flags/us-or.png",
-            "info": "俄勒冈州，是一个很棒的国家！"
-        },
-        {
-            "name": "宾夕法尼亚州",
-            "flagUrl": "flags/us-pa.png",
-            "info": "宾夕法尼亚州，是一个很棒的国家！"
-        },
-        {
-            "name": "羅德島州",
-            "flagUrl": "flags/us-ri.png",
-            "info": "羅德島州，是一个很棒的国家！"
-        },
-        {
-            "name": "南卡罗来纳州",
-            "flagUrl": "flags/us-sc.png",
-            "info": "南卡罗来纳州，是一个很棒的国家！"
-        },
-        {
-            "name": "南达科他州",
-            "flagUrl": "flags/us-sd.png",
-            "info": "南达科他州，是一个很棒的国家！"
-        },
-        {
-            "name": "田纳西州",
-            "flagUrl": "flags/us-tn.png",
-            "info": "田纳西州，是一个很棒的国家！"
-        },
-        {
-            "name": "德克萨斯州",
-            "flagUrl": "flags/us-tx.png",
-            "info": "德克萨斯州，是一个很棒的国家！"
-        },
-        {
-            "name": "犹他州",
-            "flagUrl": "flags/us-ut.png",
-            "info": "犹他州，是一个很棒的国家！"
-        },
-        {
-            "name": "弗吉尼亚州",
-            "flagUrl": "flags/us-va.png",
-            "info": "弗吉尼亚州，是一个很棒的国家！"
-        },
-        {
-            "name": "佛蒙特州",
-            "flagUrl": "flags/us-vt.png",
-            "info": "佛蒙特州，是一个很棒的国家！"
-        },
-        {
-            "name": "华盛顿州",
-            "flagUrl": "flags/us-wa.png",
-            "info": "华盛顿州，是一个很棒的国家！"
-        },
-        {
-            "name": "威斯康辛州",
-            "flagUrl": "flags/us-wi.png",
-            "info": "威斯康辛州，是一个很棒的国家！"
-        },
-        {
-            "name": "西維吉尼亞州",
-            "flagUrl": "flags/us-wv.png",
-            "info": "西維吉尼亞州，是一个很棒的国家！"
-        },
-        {
-            "name": "怀俄明州",
-            "flagUrl": "flags/us-wy.png",
-            "info": "怀俄明州，是一个很棒的国家！"
         },
         {
             "name": "乌拉圭",
@@ -1456,24 +1026,9 @@
             "info": "梵蒂冈，是一个很棒的国家！"
         },
         {
-            "name": "圣文森特和格林纳丁斯",
-            "flagUrl": "flags/vc.png",
-            "info": "圣文森特和格林纳丁斯，是一个很棒的国家！"
-        },
-        {
-            "name": "委內瑞拉",
+            "name": "委内瑞拉",
             "flagUrl": "flags/ve.png",
-            "info": "委內瑞拉，是一个很棒的国家！"
-        },
-        {
-            "name": "英屬維爾京群島",
-            "flagUrl": "flags/vg.png",
-            "info": "英屬維爾京群島，是一个很棒的国家！"
-        },
-        {
-            "name": "美屬維爾京群島",
-            "flagUrl": "flags/vi.png",
-            "info": "美屬維爾京群島，是一个很棒的国家！"
+            "info": "委内瑞拉，是一个很棒的国家！"
         },
         {
             "name": "越南",
@@ -1486,9 +1041,9 @@
             "info": "瓦努阿图，是一个很棒的国家！"
         },
         {
-            "name": "瓦利斯和富圖納",
+            "name": "瓦利斯和富图纳",
             "flagUrl": "flags/wf.png",
-            "info": "瓦利斯和富圖納，是一个很棒的国家！"
+            "info": "瓦利斯和富图纳，是一个很棒的国家！"
         },
         {
             "name": "萨摩亚",
@@ -1521,9 +1076,9 @@
             "info": "赞比亚，是一个很棒的国家！"
         },
         {
-            "name": "辛巴威",
+            "name": "津巴布韦",
             "flagUrl": "flags/zw.png",
-            "info": "辛巴威，是一个很棒的国家！"
+            "info": "津巴布韦，是一个很棒的国家！"
         }
     ]
 }

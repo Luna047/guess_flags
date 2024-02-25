@@ -1,44 +1,11 @@
 // 假设我们有一个国家和对应国旗的数组
-const countries = [
-    { name: "中国", flagUrl: "flags/cn.png", info: "中国位于亚洲..." },
-    { name: "美国", flagUrl: "flags/us.png", info: "美国位于北美洲..." },
-    { name: "英国", flagUrl: "flags/gb.png", info: "英国位于欧洲..." },
-    { name: "法国", flagUrl: "flags/fr.png", info: "法国位于欧洲..." },
-    { name: "德国", flagUrl: "flags/de.png", info: "德国位于欧洲..." },
-    { name: "意大利", flagUrl: "flags/it.png", info: "意大利位于欧洲..." },
-    { name: "日本", flagUrl: "flags/jp.png", info: "日本位于亚洲..." },
-    { name: "韩国", flagUrl: "flags/kr.png", info: "韩国位于亚洲..." },
-    { name: "澳大利亚", flagUrl: "flags/au.png", info: "澳大利亚位于大洋洲..." },
-    { name: "加拿大", flagUrl: "flags/ca.png", info: "加拿大位于北美洲..." },
-    { name: "巴西", flagUrl: "flags/br.png", info: "巴西位于南美洲..." },
-    { name: "印度", flagUrl: "flags/in.png", info: "印度位于亚洲..." },
-    { name: "俄罗斯", flagUrl: "flags/ru.png", info: "俄罗斯位于欧亚大陆..." },
-    { name: "南非", flagUrl: "flags/za.png", info: "南非位于非洲..." },
-    { name: "埃及", flagUrl: "flags/eg.png", info: "埃及位于非洲..." },
-    { name: "尼日利亚", flagUrl: "flags/ng.png", info: "尼日利亚位于非洲..." },
-    { name: "沙特阿拉伯", flagUrl: "flags/sa.png", info: "沙特阿拉伯位于亚洲..." },
-    { name: "印度尼西亚", flagUrl: "flags/id.png", info: "印度尼西亚位于亚洲..." },
-    { name: "阿根廷", flagUrl: "flags/ar.png", info: "阿根廷位于南美洲..." },
-    { name: "墨西哥", flagUrl: "flags/mx.png", info: "墨西哥位于北美洲..." },
-    { name: "智利", flagUrl: "flags/cl.png", info: "智利位于南美洲..." },
-    { name: "新西兰", flagUrl: "flags/nz.png", info: "新西兰位于大洋洲..." },
-    { name: "巴基斯坦", flagUrl: "flags/pk.png", info: "巴基斯坦位于亚洲..." },
-    { name: "泰国", flagUrl: "flags/th.png", info: "泰国位于亚洲..." },
-    { name: "菲律宾", flagUrl: "flags/ph.png", info: "菲律宾位于亚洲..." },
-    { name: "越南", flagUrl: "flags/vn.png", info: "越南位于亚洲..." },
-    { name: "马来西亚", flagUrl: "flags/my.png", info: "马来西亚位于亚洲..." },
-    { name: "新加坡", flagUrl: "flags/sg.png", info: "新加坡位于亚洲..." },
-    { name: "印度", flagUrl: "flags/in.png", info: "印度位于亚洲..." },
-    { name: "巴基斯坦", flagUrl: "flags/pk.png", info: "巴基斯坦位于亚洲..." },
-    { name: "孟加拉国", flagUrl: "flags/bd.png", info: "孟加拉国位于亚洲..." },
-    { name: "伊朗", flagUrl: "flags/ir.png", info: "伊朗位于亚洲..." },
-    { name: "土耳其", flagUrl: "flags/tr.png", info: "土耳其位于亚洲..." },
-    { name: "乌克兰", flagUrl: "flags/ua.png", info: "乌克兰位于欧洲..." },
+//import { original_data } from './countries.js';
+const countries = original_data['countries']
 
-    // 添加更多国家数据...
-];
 let g_score = 0;
 let g_usedFlags = [];
+let g_correctCountries = []; // 本轮游戏中正确的国家
+let g_wrongCountries = [];  // 本轮游戏中错误的国家
 let g_timer = 0;
 let g_time_left = 0;
 let g_correctCountryName = '';
@@ -130,6 +97,9 @@ function endGame() {
     }
     // 清除选项...
     clearOptionButton();
+    // 显示结果...
+    showResultTable();
+
     // 显示最终得分...
     // 记录排名到云存储...
     // 显示排名
@@ -207,13 +177,45 @@ function selectAnswer(selectedCountryName) {
 
         // 显示国家信息
         showCountryInfo(selectedCountryName);
-
+        
+        // 记录正确的国家
+        putIntoResultTable(g_correctCountries, selectedCountryName);
+        
         // 准备下一个问题
         nextQuestion();
     } else {
+        // 记录错误的国家
+        putIntoResultTable(g_wrongCountries, selectedCountryName);
+
         // 答案错误，直接跳转到下一个问题
         nextQuestion();
     }
+}
+
+function putIntoResultTable(resultTable, countryName) {
+    resultTable.push(countryName);
+}
+
+function showResultTable() {
+    // 在table td id="correct-flags" 中增加 <img src="flagUrl" height="50" />
+    // 在table td id="wrong-flags" 中增加 <img src="flagUrl" height="50" />
+    for (let i = 0; i < g_correctCountries.length; i++) {
+        const each_correct_country = countries.find(country => country.name === g_correctCountries[i]);
+        const flagUrl = each_correct_country.flagUrl;
+        const countryName = each_correct_country.name;
+        document.getElementById('correct-flags').innerHTML += `<img class="result-pic" src="${flagUrl}" height="70" title="${countryName}" />`;
+    }
+    for (let i = 0; i < g_wrongCountries.length; i++) {
+        const each_wrong_country = countries.find(country => country.name === g_wrongCountries[i]);
+        const flagUrl = each_wrong_country.flagUrl;
+        const countryName = each_wrong_country.name;
+        document.getElementById('wrong-flags').innerHTML += `<img class="result-pic" src="${flagUrl}" height="70" title="${countryName}" />`;
+    }
+    document.getElementById('final-result-id').style.display = 'block';
+}
+
+function recordRank() {
+    // 记录排名到云存储...
 }
 
 function showCountryInfo(countryName) {

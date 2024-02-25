@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>猜国旗游戏</title>
+  <link rel="stylesheet" href="css/styles.css"> 
+  <script src="js/game.js" defer></script>
+</head>
+<body>
+
+<div class="board-container">
+    <div id="scoreboard">
+    答对数量: <span id="score">0</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    剩余时间: <span id="time-left">0:00</span>
+    </div>
+</div>
+
+<div id="game-container">
+    <div id="flag-display">
+      <!-- 国旗图片会在这里动态加载 -->
+      <h1>你认识多少个国旗？</h1>
+      <h2>作者: 朱青橙</h2>
+      <div><h2>请选择时间以开始游戏🎮</h2></div>
+    </div>
+    <div id="options-container">
+      <!-- 四个选择按钮将在这里动态生成 -->
+    </div>
+  </div>
+
+<div id="time-selector" style="text-align:center;display:block;">
+  <button type="button" class="luna-btn" onclick="startGame(60)">60秒</button>
+  <button type="button" class="luna-btn" onclick="startGame(90)">90秒</button>
+  <button type="button" class="luna-btn" onclick="startGame(120)">120秒</button>
+</div>
+
+<!-- 国家信息模态框 -->
+<div id="country-info-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p id="country-info"></p>
+  </div>
+</div>
+
+</body>
+</html>

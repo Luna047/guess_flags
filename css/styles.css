@@ -1,0 +1,93 @@
+body{
+    background-color: rgb(168, 225, 225);
+    background-image: url('../flags/big_bg.png'); /* 替换为真实的图片路径 */
+    background-size: cover; /* 背景图片覆盖整个页面 */
+    background-repeat: no-repeat; /* 不重复背景图片 */
+    background-position: center center; /* 背景图片居中对齐 */
+  }  
+h1 {
+    text-align: center;
+    font-size:xx-large;
+    font-family: sans-serif;
+    color:  rgb(87, 34, 221);
+}
+.board-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.luna-btn {
+  background-color: rgb(12, 34, 158);
+  color: aqua;
+  font-size: larger;
+  border:none;
+  border-radius:10px;
+  box-shadow: 0px 0px 2px 2px rgb(12, 34, 158);
+  min-height:40px; 
+  min-width: 120px;
+}
+
+#scoreboard {
+    text-align: right;
+    font-size: larger;
+    font-family: sans-serif;
+    color:  rgb(111, 31, 155);
+    margin: 20px;
+}
+#game-container {
+    text-align: center;
+    background-color: rgba(168, 225, 225, 0);
+    margin-top: 50px;
+
+  }
+  
+  #flag-display {
+    background-color: rgba(168, 225, 225, 0);
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+  
+  #options-container button {
+    margin: 10px;
+    padding: 10px 20px;
+  }
+  
+  #time-selector button {
+    margin: 10px;
+  }
+  
+  .modal {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); /* 背景色 */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

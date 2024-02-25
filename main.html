@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>猜国旗游戏</title>
   <link rel="stylesheet" href="css/styles.css"> 
+  <script src="js/country_code.js" defer></script>
   <script src="js/game.js" defer></script>
 </head>
 <body>
@@ -33,6 +34,21 @@
   <button type="button" class="luna-btn" onclick="startGame(120)">120秒</button>
 </div>
 
+<div id="final-result-id" class="final-result-container" style="text-align:center; display:none;">
+  <table id="country-table" width="90%" >
+    <tr>
+      <th id="correct-flag-num" class="text-title text-blue" width="50%">答对的国旗</th>
+      <th id="wrong-flag-num" class="text-title text-blue" width="50%">答错的国旗</th>
+    </tr>
+    <tr>
+      <td id="correct-flags">
+
+      </td>
+      <td id="wrong-flags">
+
+      </td>
+    </tr>
+</div>
 <!-- 国家信息模态框 -->
 <div id="country-info-modal" class="modal">
   <div class="modal-content">

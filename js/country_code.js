@@ -141,11 +141,6 @@ const original_data = {
             "info": "玻利维亚，是一个很棒的国家！"
         },
         {
-            "name": "荷兰加勒比区",
-            "flagUrl": "flags/bq.png",
-            "info": "荷兰加勒比区，是一个很棒的国家！"
-        },
-        {
             "name": "巴西",
             "flagUrl": "flags/br.png",
             "info": "巴西，是一个很棒的国家！"
@@ -386,11 +381,6 @@ const original_data = {
             "info": "加纳，是一个很棒的国家！"
         },
         {
-            "name": "直布罗陀",
-            "flagUrl": "flags/gi.png",
-            "info": "直布罗陀，是一个很棒的国家！"
-        },
-        {
             "name": "格陵兰",
             "flagUrl": "flags/gl.png",
             "info": "格陵兰，是一个很棒的国家！"
@@ -419,11 +409,6 @@ const original_data = {
             "name": "危地马拉",
             "flagUrl": "flags/gt.png",
             "info": "危地马拉，是一个很棒的国家！"
-        },
-        {
-            "name": "关岛",
-            "flagUrl": "flags/gu.png",
-            "info": "关岛，是一个很棒的国家！"
         },
         {
             "name": "几内亚比索",

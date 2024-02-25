@@ -120,7 +120,7 @@ function createOptions(selectedCountry) {
     g_correctCountryName = selectedCountry.name;
     const correctCountry = countries.find(country => country.name === g_correctCountryName);
     const correctOption = createOptionButton(correctCountry.name);
-    correctOption.classList.add('luna-btn-correct');
+    correctOption.classList.add('luna-btn');
     correctOption.onclick = () => selectAnswer(correctCountry.name);
     optionsContainer.appendChild(correctOption);
     const otherCountries = countries.filter(country => country.name !== g_correctCountryName);

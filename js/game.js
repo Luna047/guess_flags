@@ -13,12 +13,17 @@ let g_countdownTimer;
 let g_total_question = 10;
 let g_rank = -1;
 let g_beat_percentage = '100%';
+let g_user_name = '';
 
 function startGame(duration) {
     // 初始化游戏设置
     document.getElementById('score').innerText = '0';
     g_usedFlags = [];
     g_score = 0;
+
+    // 获取user_name
+    const user_name = document.getElementById('user_name').value || '无名英雄';
+    g_user_name = user_name;
 
     // 清除body背景
     document.body.style.backgroundImage = 'none';
@@ -86,7 +91,7 @@ function getUnusedCountries() {
 }
 
 function endGame() {
-    document.getElementById('flag-display').innerHTML = '<h1>游戏结束</h1><H2>你的得分是：' + g_score/g_total_question*100 + 
+    document.getElementById('flag-display').innerHTML = '<h1>游戏结束</h1><H2><span class="text-info">'+g_user_name+'</span>, 你的得分是：' + g_score/g_total_question*100 + 
         '</H2><H2>答题时间：' + formatTime(g_timer - g_time_left) + '</H2>' +
         // '<H2>你的排名：' + g_rank + '</H2>' + '<H2>战胜了' + g_beat_percentage + '的网友</H2>' +
         '<br><button onclick="location.reload()" class="luna-btn">再来一局</button>';

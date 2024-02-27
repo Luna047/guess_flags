@@ -21,7 +21,7 @@
       <!-- 国旗图片会在这里动态加载 -->
       <h1>你认识多少个国旗？</h1>
       <h2 class="text-normal text-info">Luna 设计制作</h2>
-      <div><h2>请选择时间以开始游戏🎮</h2></div>
+      <div><h2>请输入名字并选择时间以开始游戏</h2></div>
     </div>
     <div id="options-container">
       <!-- 四个选择按钮将在这里动态生成 -->
@@ -29,6 +29,7 @@
   </div>
 
 <div id="time-selector" style="text-align:center;display:block;">
+  <div class="container" style="text-align:center;display:block;"><input class="input_box" type="text" id="user_name" placeholder="请输入你的名字"></div>
   <button type="button" class="luna-btn" onclick="startGame(60)">60秒</button>
   <button type="button" class="luna-btn" onclick="startGame(90)">90秒</button>
   <button type="button" class="luna-btn" onclick="startGame(120)">120秒</button>

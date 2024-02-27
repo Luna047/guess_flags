@@ -916,11 +916,6 @@ const original_data = {
             "info": "乍得，是一个很棒的国家！"
         },
         {
-            "name": "法属南部和南极领地",
-            "flagUrl": "flags/tf.png",
-            "info": "法属南部和南极领地，是一个很棒的国家！"
-        },
-        {
             "name": "多哥",
             "flagUrl": "flags/tg.png",
             "info": "多哥，是一个很棒的国家！"

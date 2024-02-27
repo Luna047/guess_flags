@@ -15,7 +15,7 @@
 2. 屏幕上会出现你的得分和用时,
 3. 下面会展示正确的国旗和错误的国旗。
 
-![Guess Flags Workflow](x "这是一个流程图")
+![Guess Flags Workflow](https://github.com/Luna047/guess_flags/blob/main/docs/%E9%A2%86%E8%88%AA%E6%9D%AF%E7%8C%9C%E5%9B%BD%E6%97%97.jpg "这是一个流程图")
 
 ### 文件介绍
 1. 主页面main.html上需要展示所有游戏的内容。当然，在每个阶段，只展示需要展示的内容，其他内容将会自动隐藏。

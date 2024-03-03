@@ -1021,11 +1021,6 @@ const original_data = {
             "info": "瓦努阿图，是一个很棒的国家！"
         },
         {
-            "name": "瓦利斯和富图纳",
-            "flagUrl": "flags/wf.png",
-            "info": "瓦利斯和富图纳，是一个很棒的国家！"
-        },
-        {
             "name": "萨摩亚",
             "flagUrl": "flags/ws.png",
             "info": "萨摩亚，是一个很棒的国家！"

@@ -10,7 +10,7 @@ let g_timer = 0;
 let g_time_left = 0;
 let g_correctCountryName = '';
 let g_countdownTimer;
-let g_total_question = 10;
+let g_total_question = 20;
 let g_rank = -1;
 let g_beat_percentage = '100%';
 let g_user_name = '';

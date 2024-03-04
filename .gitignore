@@ -1,5 +1,7 @@
 *.json
 __DS_Store
 .DS_Store
-
+flags/.DS_Store
 *.log
+docs/.DS_Store
+docs/.~*
